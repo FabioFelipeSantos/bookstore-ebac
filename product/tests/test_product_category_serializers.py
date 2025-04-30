@@ -107,7 +107,6 @@ class TestProductSerializer:
         }
 
         serializer = ProductSerializer(data=product_data)
-        serializer = ProductSerializer(data=product_data)
 
         assert serializer.is_valid(), serializer.errors
         product = serializer.save()
