@@ -3,7 +3,7 @@ services:
         build: .
         command: python manage.py runserver 0.0.0.0:8000
         volumes:
-            - . :/usr/src/app/
+            - app_data:/usr/src/app/
         ports:
             - "8000:8000"
         env_file:
@@ -14,6 +14,8 @@ services:
             - db
     db:
         image: postgres:latest
+        ports:
+            - 5432:5432
         restart: always
         volumes:
             - postgres_data:/var/lib/postgresql/data/
@@ -29,3 +31,4 @@ networks:
 
 volumes:
     postgres_data:
+    app_data:
