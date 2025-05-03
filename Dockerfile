@@ -17,6 +17,7 @@ FROM python-base AS builder-base
 RUN apt-get update && apt-get install --no-install-recommends -y curl build-essential
 
 RUN curl -sSL https://install.python-poetry.org | python
+RUN apt-get update && apt-get install -y libpq-dev gcc && pip install psycopg2
 
 WORKDIR $PYSETUP_PATH
 COPY poetry.lock pyproject.toml ./
