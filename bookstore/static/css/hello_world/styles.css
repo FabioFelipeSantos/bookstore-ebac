@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Crimson Text", serif;
+  letter-spacing: 1px;
+  list-style: none;
+}
+
+html {
+  /* min-height: 100vh; */
+  font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+  background-color: #001;
+  color: white;
+}
+
+p {
+  margin: 0.6rem 0;
+}
+
+.container {
+  width: 92%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  font-size: 2.8rem;
+  text-align: center;
+
+  h2 {
+    font-size: 3.2rem;
+  }
+}
+
+code {
+  font-family: "Courier New", Courier, monospace;
+  background-color: hsl(150, 50%, 9%);
+  color: white;
+  font-weight: bold;
+  padding: 0.3rem 1rem;
+  border-radius: 0.4rem;
+  margin: 0 0.6rem;
+}
+
+a {
+  color: hsl(150, 80%, 75%);
+  text-decoration: none;
+  font-size: 2.4rem;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+    color: hsl(150, 80%, 95%);
+  }
+
+  &:active {
+    transform: scale(1);
+    color: hsl(150, 80%, 55%);
+  }
+}
+
+.main-title {
+  font-size: 3.4rem;
+  margin: 20px 0;
+
+  em {
+    color: hsl(150, 80%, 85%);
+    font-size: 3.4rem;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+  }
+}
+
+#current-time {
+  margin: 20px 0;
+  font-size: 2.2rem;
+}
+
+main {
+  margin-top: 1.8rem;
+  font-size: 1.7rem;
+}
+
+.about-project,
+.about-me {
+  margin-top: 4rem;
+  padding: 0 2rem;
+  h2 {
+    margin-bottom: 0.8rem;
+  }
+}
+
+.about-me {
+  text-align: right;
+}
+
+.social-media {
+  margin-top: 1.6rem;
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+}
+
+.social-media-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  img {
+    max-width: 5rem;
+    aspect-ratio: 1;
+  }
+}
+
+.links {
+  margin: 4rem 0 4rem;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.link-item {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 2.8rem;
+  margin: 1.6rem 0;
+
+  p {
+    width: 62%;
+    text-align: justify;
+  }
+
+  a {
+    font-size: 2.4rem;
+    color: hsl(150, 80%, 75%);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+      color: hsl(150, 80%, 95%);
+    }
+
+    &:active {
+      transform: scale(1);
+      color: hsl(150, 80%, 55%);
+    }
+  }
+}
+
+footer {
+  font-size: 1.6rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > div {
+    width: 40%;
+    padding: 2rem;
+    border: 1px solid hsl(150, 80%, 75%);
+    border-radius: 1.6rem;
+    margin: 4rem 0 2rem;
+  }
+}

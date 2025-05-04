@@ -3,9 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello, World!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Bookstore - Fábio Santos</title>
+    <link rel="stylesheet" href="{% static 'css/hello_world/styles.css' %}">
+    {% comment %} <link rel="stylesheet" href="../static/css/hello_world/styles.css"> {% endcomment %}
 </head>
     <body>
-        <h1>Hello, World! V1</h1>
+        <header>
+            <div class="container">
+                <h1 class="main-title">
+                    Olá, seja bem vindo à minha página inicial do projeto <em>Bookstore</em> da Ebac
+                </h1>
+                <h2><strong>Aluno:</strong> <em>Fábio Santos</em></h2>
+                <time id="current-time" datetime=""></time>
+            </div>
+        </header>
+
+        <main class="container">
+            <div class="about-project">
+                <h2 class="sub-title">Sobre o projeto</h2>
+                <p>Projeto com o intuito de realizar uma aplicação completa em Django e fornecê-la através da plataforma Python Anywhere.</p>
+                <p>O objetivo é praticar os conceitos aprendidos no curso de Desenvolvimento Full Stack Python da Ebac.</p>
+            </div>
+
+            <div class="about-me">
+                <h2 class="sub-title">Sobre mim</h2>
+                <p>Meu nome é Fábio Santos, sou desenvolvedor Python e estou em busca de novos desafios na área de tecnologia.</p>
+                <p>Estou sempre buscando aprender e me aprimorar, e este projeto é uma ótima oportunidade para isso.</p>
+                <p>Se você está interessado em saber mais sobre mim ou meu trabalho, fique à vontade para entrar em contato.</p>
+                <p>Você pode me encontrar nas redes sociais:</p>
+
+                <ul class="social-media">
+                    <li>
+                        <a href="https://github.com/FabioFelipeSantos"  target="_blank">
+                            <div class="social-media-item">
+                                <img src="{% static 'images/github.svg' %}" alt="Logo do GitHub">
+                                <span>GitHub</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/f%C3%A1bio-santos-a417a0127/" target="_blank">
+                            <div class="social-media-item">
+                                <img src="{% static 'images/linkedin.svg' %}" alt="Logo do LinkedIn">
+                                <span>LinkedIn</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <section class="container links">
+                <h2>Links Disponíveis</h2>
+                <ul>
+                    <li>
+                        <div class="link-item">
+                            <h3>
+                                <a href="https://fabiosantos2506.pythonanywhere.com/admin" target="_blank">Admin</a></h3>
+                            <p>Site do administrador Django. Para testar entre com o usuário <code>admin_teste</code> e a senha <code>a.1.b.2.c.3.d.4</code>.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="link-item">
+                            <h3><a href="https://fabiosantos2506.pythonanywhere.com/bookstore/v1/category" target="_blank">Categorias</a></h3>
+                            <p>Site para se adicionar categorias de produtos diversos. Útil para testar a criação e visualização de categorias.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="link-item">
+                            <h3>
+                                <a href="https://fabiosantos2506.pythonanywhere.com/bookstore/v1/product" target="_blank">
+                                    Produtos
+                                </a>
+                            </h3>
+                            <p>Site para se adicionar produtos de uma loja. Útil para testar a criação e visualização de produtos.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="link-item">
+                            <h3>
+                                <a href="https://fabiosantos2506.pythonanywhere.com/bookstore/v1/order" target="_blank">
+                                    Ordem de Compra
+                                </a>
+                            </h3>
+                            <p>Site para se adicionar ordens de compra por usuário e item. Útil para testar a criação e visualização de ordens.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="container">
+            <div>
+                <p>Desenvolvido por <strong>Fábio Santos</strong></p>
+                <p>Data de criação: 2025-05-04</p>
+                <p id="footer-last">Última atualização: 2025-05-04</p>
+            </div>
+        </footer>
+        <script src="{% static 'js/hello_world/main.js' %}"></script>
+        {% comment %} <script src="../static/js/hello_world/main.js"></script> {% endcomment %}
     </body>
 </html>
